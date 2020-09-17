@@ -1,6 +1,9 @@
 package com.company.service;
 
+import com.company.domain.Book;
 import com.company.domain.Client;
+
+import java.util.List;
 
 public interface ClientService {
 
@@ -8,7 +11,7 @@ public interface ClientService {
 
     void update(int id, String name);
 
-    void delete(int id, Client client);
+    void delete(int id);
 
     Client findClient(int id);
 
@@ -16,5 +19,5 @@ public interface ClientService {
 
     void giveBack(int bookId);
 
-    void showBorrowedBooks(int clientId);
+    List<Book> showBorrowedBooks(int clientId);
 }
