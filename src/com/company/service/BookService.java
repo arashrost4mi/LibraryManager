@@ -1,18 +1,21 @@
 package com.company.service;
 
 import com.company.domain.Book;
+import com.company.domain.Client;
+
+import java.util.List;
 
 public interface BookService {
 
-    void create(String name, String writer, boolean borrowed, int clientId);
+    void create(String name, String writer);
 
     void update(int id, String name, String writer, boolean borrowed, int clientId);
 
-    void delete(int id, Book book);
+    void delete(int id);
 
     Book findBook(int id);
 
-    void showClient(int bookId);
+    Client showClient(int bookId);
 
-    void showBorrowedBooks();
+    List<Book> showBorrowedBooks();
 }

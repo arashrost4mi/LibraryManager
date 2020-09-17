@@ -10,14 +10,12 @@ public class Book {
 
     boolean borrowed = false;
 
-    int clientId;
+    int clientId=0;
 
-    public Book(int id, String name, String writer, boolean borrowed, int clientId) {
+    public Book(int id, String name, String writer) {
         this.id = id;
         this.name = name;
         this.writer = writer;
-        this.borrowed = borrowed;
-        this.clientId = clientId;
     }
 
     public int getId() {
