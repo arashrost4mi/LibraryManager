@@ -10,9 +10,7 @@ public interface LibraryService {
 
     void create(String name);
 
-    void update(int id, String name);
-
-    void delete(int id, Library library);
+    void update(String name);
 
     void showLibrary();
 
