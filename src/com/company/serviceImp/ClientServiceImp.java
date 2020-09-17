@@ -63,4 +63,9 @@ public class ClientServiceImp implements ClientService {
         }
         return borrowedBookList;
     }
+
+    public ClientServiceImp(LibraryService libraryService, BookService bookService) {
+        this.libraryService = libraryService;
+        this.bookService = bookService;
+    }
 }
