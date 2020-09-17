@@ -8,7 +8,7 @@ public class Book {
 
     String writer;
 
-    boolean borrowed;
+    boolean borrowed = false;
 
     int clientId;
 
