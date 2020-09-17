@@ -41,4 +41,9 @@ public class Library {
     public void setClients(List<Client> clients) {
         this.clients = clients;
     }
+
+    public Library(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
